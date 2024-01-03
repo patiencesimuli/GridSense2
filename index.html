@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3-Phase Power Line Monitoring</title>
+</head>
+<body>
+    <h1>3-Phase Power Line Monitoring</h1>
+
+    <h2>Voltage Values</h2>
+    <ul>
+        <li>Voltage 1: {{ voltage_values[0] }} V</li>
+        <li>Voltage 2: {{ voltage_values[1] }} V</li>
+        <li>Voltage 3: {{ voltage_values[2] }} V</li>
+        <li>Voltage 4: {{ voltage_values[3] }} V</li>
+    </ul>
+
+    <h2>Current Values</h2>
+    <ul>
+        <li>Current 1: {{ current_values[0] }} A</li>
+        <li>Current 2: {{ current_values[1] }} A</li>
+        <li>Current 3: {{ current_values[2] }} A</li>
+        <li>Current 4: {{ current_values[3] }} A</li>
+    </ul>
+
+    <h2>Fault Status</h2>
+    
+    <p style="color: 'green' if fault_type = 'NO FAULT' else 'red' ">
+        {{ fault_type }}
+    </p>
+    
+</body>
+</html>
